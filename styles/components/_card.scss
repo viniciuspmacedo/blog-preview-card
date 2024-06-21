@@ -1,0 +1,67 @@
+@import '../abstract/variables';
+
+main{
+    background-color: $white;
+    width: 327px;
+    border: 1px solid $black;
+    border-radius: 20px;
+    box-shadow: 10px 10px $black;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .card-data{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .tag {
+            background-color: $yellow;
+            font-size: 1.2rem;
+            font-weight: $font-bold;
+            padding: 4px 12px;
+            border-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .article-date{
+            font-size: 1.2rem;
+        }
+
+        .article-title{
+            font-size: 2.0rem;
+            font-weight: $font-bold
+        }
+
+        .article-description{
+            color: $grey;
+            font-size: 1.4rem;
+            line-height: 1.5;
+        }
+    }
+
+    .author-profile{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img{
+            width: 32px;
+            height: 32px;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: $font-bold
+        }
+    }
+
+    
+
+    
+}
